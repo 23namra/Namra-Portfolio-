@@ -1,0 +1,132 @@
+/* style.css */
+
+/* Apply gradient background to the whole page */
+
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  scroll-behavior: smooth; /* optional smooth scrolling */
+}
+
+section.title,
+section.Introduction {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Specific backgrounds & text colors */
+section.title {
+  background: linear-gradient(135deg, #ffb6c1, #ffffff);
+  color: #4a4a4a;
+}
+
+section.Introduction {
+  background-color: #f8f9fa;
+  color: #333;
+}
+
+/* Make sure body and html fill full height and have no margin */
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+/* Sections fill full viewport height */
+section.title, section.Introduction {
+  height: 100vh;        /* full viewport height */
+  padding: 0 !important; /* remove padding */
+  margin: 0 !important;  /* remove margin */
+  display: flex;
+  align-items: center;   /* vertical center */
+  justify-content: center; /* horizontal center */
+  text-align: center;
+}
+
+/* Override Bootstrap container padding so it doesn't shrink the sections */
+section .container {
+  padding-left: 1rem !important;
+  padding-right: 1rem !important;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* Remove vertical margins from inner divs to avoid shrinking */
+section .px-4.py-5.my-5.text-center,
+section .px-4.py-5.my-5.text-center > div {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+.Introduction {
+  background: linear-gradient(135deg, #ffe6f0 0%, #ffffff 100%);
+  padding: 60px 20px;
+  color: #555; 
+}
+
+.Skills{
+  background: linear-gradient(135deg, #fadee9 0%, #ffffff 100%);
+  padding: 60px 20px;
+  color: #555; 
+}
+
+.links{
+  background: linear-gradient(135deg, #ffe6f0 0%, #ecd0d0 100%);
+  padding: 60px 20px;
+  color: #555; 
+}
+
+.Footer{
+  background: linear-gradient(135deg, #ffe6f0 0%, #ffffff 100%);
+  padding: 60px 20px;
+  color: #555; 
+}
+.links {
+  background: linear-gradient(135deg, #fbeff2 0%, #f4f4f4 100%);
+  padding: 60px 20px;
+  color: #555; 
+  text-align: center;
+}
+
+.links h2 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 2rem;
+}
+
+.link-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  flex-wrap: wrap;
+}
+
+.link-list li {
+  font-size: 1.2rem;
+}
+
+.link-list a {
+  text-decoration: none;
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+.link-list a:hover {
+  color: #ff69b4; /* soft pink */
+}
+
+.skills-list li {
+  font-size: 14px;
+  line-height: 1.4;
+  margin-bottom: 4px;
+}
+
+.img {
+color: #333333;
+}
